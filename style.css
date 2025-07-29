@@ -1,9 +1,10 @@
-:root {
-    --cor-fundo: #f7f8fa; /* cor de fundo mais suave */
-    --cor-principal: #e3e8ff; /* tom mais frio para a cor principal */
-    --cor-secundaria: #f0f4ff; /* um tom mais claro e neutro */
-    --cor-destaque: #ff6363; /* tom mais suave de vermelho */
-    --cor-texto: #4a4a4a; /* cor de texto mais escura para legibilidade */
+:root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+
 }
 
 body {
@@ -13,41 +14,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Arial', sans-serif; /* fonte mais simples e neutra */
 }
 
-.caixa-principal {
+.caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 30px;
-    border-radius: 8px; /* cantos arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* sombra suave para destaque */
+    padding: 20px;
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
-    font-size: 2rem;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
     border: none;
-    border-radius: 20px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+button:hover{
     background-color: var(--cor-destaque);
-    color: var(--cor-fundo);
-    transform: scale(1.05); /* pequeno efeito de zoom */
-}
-
-button:active {
-    transform: scale(1); /* efeito de pressão no clique */
+    color: var(--cor-principal);
 }
